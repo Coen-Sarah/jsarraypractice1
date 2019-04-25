@@ -6,4 +6,4 @@ const range = function (start,end){
     }
     return total;
 }
-console.log(range(1,5))
+console.log(range(5,10));

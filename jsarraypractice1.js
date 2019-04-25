@@ -3,7 +3,9 @@ const range = function (start,end){
     while (start < end){
         total = total + (start + 1);
         start++ ;
+        console.log(total);
     }
     return total;
 }
-console.log(range(5,10));
+
+console.log(range(6,10));

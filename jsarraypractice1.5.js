@@ -2,14 +2,22 @@
 let range = [];
     
 const makeRange= function(start, end)
-    {
-        while (start <= end){
-        range.push(start);
-        start++;
-        }
+    {  
+        if (start <= end){
+            while (start <= end){
+            range.push(start);
+            start++;
+            }
         return range;
+        } else {
+            while (start >= end){
+            range.push(start);
+            start--;
+            }
+        return range;
+        }
     }
-//    console.log(makeRange(1,5));
+    console.log(makeRange(3,-3));
 
 const sum = function (){
     counter = 0;
@@ -17,9 +25,9 @@ const sum = function (){
     while (counter < (range.length -1) ){ 
         counter++
         total  = total + range[counter];
-      //  console.log(total);
+        //console.log(total);
     }
     return total;
 }
 
-console.log(sum(makeRange(6,10)));
+console.log(sum(makeRange(3,-3)));

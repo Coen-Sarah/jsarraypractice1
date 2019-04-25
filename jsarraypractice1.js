@@ -8,4 +8,4 @@ const range = function (start,end){
     return total;
 }
 
-console.log(range(6,10));
+console.log(range(3, -3));
